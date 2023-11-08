@@ -98,7 +98,12 @@ function FormAlumnos ({setRegister, listaAlumnos, setListaAlumnos}) {
                         </option>
                       ))}
                     </select>
-                    
+                    <label htmlFor="label-form">Repite el nombre de tu escuela</label>
+                    <input type="text" 
+                      name="escuela"
+                      value={alumnos.escuela}
+                      onChange={handleChange}
+                    />
                     <label className="label-form">Egresado:</label>
                     <input
                     type="text"
@@ -117,7 +122,7 @@ function FormAlumnos ({setRegister, listaAlumnos, setListaAlumnos}) {
                     />
                     {mensaje === false ? <h2 type="none" className="password-btn" onClick={() => handleGenerate()}>Generar Contraseña</h2> : <h2 className="form-title">Contraseña generada correctamente</h2>}
                     <div className="btn-container">
-                      <button type="submit" className="submit-btn">Registrar Empresa</button>
+                      <button type="submit" className="submit-btn">Registrar Alumnos</button>
                       <button onClick={() => setRegister(false)} className="cancel-btn">Cancelar</button>
                     </div>
                </form>

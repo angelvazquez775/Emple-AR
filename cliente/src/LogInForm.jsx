@@ -81,7 +81,8 @@ function LogInForm ({setLogInForm, setAddEmpresa, userData, setOferta,setUser, s
                     <h2 className="form-title">Iniciar Sesion</h2>
                     <label htmlFor="user-name"><b>Nombre de usuario:</b></label>
                     <input type="text" id="user-name" 
-                        onChange={(event) => setUserName(event.target.value)}
+                        onChange={(event) => {setUserName(event.target.value) 
+                        }}
                     />
                     <label htmlFor="user-password"><b>Contraseña:</b></label>
                     <input type="password" id="user-password"

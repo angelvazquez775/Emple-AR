@@ -32,6 +32,8 @@ function App () {
   const [index, setIndex] = useState("")
   const [listaAlumnos, setListaAlumnos] = useState([])
   const [nombreEmpresa, setNombreEmpresa] = useState("")
+  const [userName, setUserName] = useState('')
+
   
 
 
@@ -95,6 +97,7 @@ function App () {
       ></MainText>}  
       {acercaDe === true && <AcercaDe></AcercaDe>}
       {logInForm === true && <LogInForm
+        userName = {userName}
         setIndex = {setIndex}
         setForm={setForm}
         userData={userData}

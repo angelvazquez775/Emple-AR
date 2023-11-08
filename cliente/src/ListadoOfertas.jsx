@@ -31,7 +31,7 @@ function ListadoOfertas () {
     return(
         <>
             <div className="empresa-container">
-      <h1 className="title">Ofertas Publicadas</h1>
+            <h1 className="title">Ofertas Publicadas</h1>
             <ul>
                 {listaOfertas.map((oferta, index) => (
                 <div key={index} className="cont-empresa">
